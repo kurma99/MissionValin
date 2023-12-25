@@ -2171,6 +2171,50 @@
         "name": "Green2",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Tiled Empty UI Heart.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/tiled_Tiled Empty UI Heart.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "tiled_Tiled Empty UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/688519c5bb4abaf5805518633f2ff810928e29164497fb5c13dabf97044be843_tiled_Tiled Empty UI Heart.png",
+          "name": "tiled_Tiled Empty UI Heart.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Tiled Filler UI Heart.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Tiled Filler UI Heart.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/5b5c6c85ec4e1f5b6688be565c9a06920a76ee191915738afd61da1481fd6493_tiled_Tiled Filler UI Heart.png",
+          "name": "tiled_Tiled Filler UI Heart.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Tiled Filler UI Heart.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/tiled_Tiled Filler UI Heart.png2.png\"}",
+        "name": "tiled_Tiled Filler UI Heart.png2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Tiled Empty UI Heart.png2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "tiled_Tiled Empty UI Heart.png2",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2197,7 +2241,7 @@
       "folded": true,
       "name": "Hull",
       "type": "string",
-      "value": "Triangle Hull"
+      "value": "Square Hull"
     },
     {
       "folded": true,
@@ -2279,7 +2323,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.34375202416123324,
+        "zoomFactor": 0.5843784410740961,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2720,6 +2764,22 @@
           "x": 896,
           "y": 692,
           "zOrder": 24,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 32,
+          "height": 192,
+          "layer": "UI",
+          "name": "PixelHeartBar",
+          "persistentUuid": "d01c8202-207c-4771-87b5-5906598b5f22",
+          "width": 384,
+          "x": 32,
+          "y": 20,
+          "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3770,6 +3830,18 @@
               "name": "WeaponType",
               "type": "string",
               "value": "Catapult"
+            },
+            {
+              "folded": true,
+              "name": "Health",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 1
             }
           ],
           "effects": [],
@@ -4030,6 +4102,18 @@
               "name": "hasTarget",
               "type": "boolean",
               "value": false
+            },
+            {
+              "folded": true,
+              "name": "MaxHealth",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "Health",
+              "type": "number",
+              "value": 0
             }
           ],
           "effects": [
@@ -4052,15 +4136,15 @@
           ],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "angleOffset": 0,
               "cellHeight": 32,
               "cellWidth": 32,
               "extraBorder": 20,
               "gridOffsetX": 80,
               "gridOffsetY": 68,
-              "name": "Pathfinding",
               "smoothingMaxCellGap": 2,
-              "type": "PathfindingBehavior::PathfindingBehavior",
               "angularMaxSpeed": 60,
               "maxSpeed": 200,
               "acceleration": 400,
@@ -7060,6 +7144,54 @@
               "IsDestroyedWithParent": true
             }
           ]
+        },
+        {
+          "assetStoreId": "db57d0bcdc074868304ca46431ac85fcef3f613be5fba73ae0adc26ee2c8629b",
+          "name": "PixelHeartBar",
+          "type": "TiledUnitsBar::TiledUnitsBar",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "bottomEdgeAnchor": 0,
+              "leftEdgeAnchor": 1,
+              "name": "Anchor",
+              "relativeToOriginalWindowSize": true,
+              "rightEdgeAnchor": 0,
+              "topEdgeAnchor": 1,
+              "type": "AnchorBehavior::AnchorBehavior",
+              "useLegacyBottomAndRightAnchors": true
+            }
+          ],
+          "content": {
+            "UnitWidth": 96,
+            "HideBackground": true,
+            "ShowBackground": false,
+            "MaxValue": 3,
+            "InitialValue": 1
+          },
+          "childrenContent": {
+            "Background": {
+              "bottomMargin": 0,
+              "height": 96,
+              "leftMargin": 0,
+              "rightMargin": 0,
+              "texture": "tiled_Tiled Empty UI Heart.png",
+              "tiled": true,
+              "topMargin": 0,
+              "width": 288
+            },
+            "Bar": {
+              "height": 96,
+              "texture": "tiled_Tiled Empty UI Heart.png2",
+              "width": 280
+            },
+            "FillBar": {
+              "height": 96,
+              "texture": "tiled_Tiled Filler UI Heart.png2",
+              "width": 288
+            }
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -7160,6 +7292,9 @@
           },
           {
             "objectName": "Ball_trail"
+          },
+          {
+            "objectName": "PixelHeartBar"
           }
         ]
       },
@@ -7668,7 +7803,123 @@
                       },
                       "parameters": [
                         "",
-                        "\"Lvl_1_intro_teal_4\"",
+                        "\"Lvl_1_intro_lime_1\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "17"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_1_intro_lime_2\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "18"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_1_intro_lime_3\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "19"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_1_intro_lime_4\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "20"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_1_intro_lime_5\"",
                         "0",
                         "0",
                         "0"
@@ -7837,7 +8088,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
@@ -7943,6 +8193,28 @@
                             "=",
                             "\"Circle Hull\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "PlayerShip",
+                            "Health",
+                            "=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "PlayerShip",
+                            "MaxHealth",
+                            "=",
+                            "2"
+                          ]
                         }
                       ]
                     },
@@ -8013,6 +8285,28 @@
                             "Animation",
                             "=",
                             "\"Square Hull\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "PlayerShip",
+                            "Health",
+                            "=",
+                            "3"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "PlayerShip",
+                            "MaxHealth",
+                            "=",
+                            "3"
                           ]
                         }
                       ]
@@ -8085,6 +8379,28 @@
                             "=",
                             "\"Triangle Hull\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "PlayerShip",
+                            "Health",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "PlayerShip",
+                            "MaxHealth",
+                            "=",
+                            "1"
+                          ]
                         }
                       ]
                     }
@@ -8124,7 +8440,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "FoeShip",
                   "conditions": [],
@@ -8148,6 +8463,7 @@
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -8264,12 +8580,24 @@
                                 "=",
                                 "\"Circle_lowrez\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "3"
+                              ]
                             }
                           ]
                         }
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -8386,12 +8714,24 @@
                                 "=",
                                 "\"Circle_lowrez\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "3"
+                              ]
                             }
                           ]
                         }
                       ]
                     },
                     {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -8508,6 +8848,17 @@
                                 "=",
                                 "\"Circle_lowrez\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "3"
+                              ]
                             }
                           ]
                         }
@@ -8618,6 +8969,17 @@
                                 "Animation",
                                 "=",
                                 "\"Triangle_lowrez\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "1"
                               ]
                             }
                           ]
@@ -8730,6 +9092,17 @@
                                 "=",
                                 "\"Triangle_lowrez\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "1"
+                              ]
                             }
                           ]
                         }
@@ -8840,6 +9213,17 @@
                                 "Animation",
                                 "=",
                                 "\"Triangle_lowrez\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "1"
                               ]
                             }
                           ]
@@ -8993,6 +9377,17 @@
                                 "=",
                                 "\"Circle_lowrez\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "2"
+                              ]
                             }
                           ]
                         }
@@ -9134,6 +9529,17 @@
                                 "Animation",
                                 "=",
                                 "\"Circle_lowrez\""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "2"
                               ]
                             }
                           ]
@@ -9277,6 +9683,17 @@
                                 "=",
                                 "\"Circle_lowrez\""
                               ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "FoeShip",
+                                "MaxHealth",
+                                "=",
+                                "2"
+                              ]
                             }
                           ]
                         }
@@ -9306,12 +9723,24 @@
                             "128",
                             "128"
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "FoeShip",
+                            "Health",
+                            "=",
+                            "FoeShip.MaxHealth"
+                          ]
                         }
                       ]
                     }
                   ]
                 },
                 {
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::ForEach",
                   "object": "FoeWeapon",
                   "conditions": [],
@@ -9778,6 +10207,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "FoeShip",
               "conditions": [],
@@ -10668,6 +11098,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "FoeWeapon",
               "conditions": [],
@@ -11728,6 +12159,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12028,6 +12460,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12351,6 +12784,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -12933,6 +13367,34 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Hull Type"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarGlobalTxt"
+                  },
+                  "parameters": [
+                    "Hull",
+                    "=",
+                    "\"Triangle\""
+                  ]
+                }
+              ],
+              "actions": []
             }
           ],
           "parameters": []
@@ -13033,7 +13495,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Repeat",
                   "repeatExpression": "CannonBall.shortterm",
                   "conditions": [],
@@ -13052,7 +13513,6 @@
                       "comment": "Detect Foe"
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -13139,7 +13599,6 @@
                           "actions": []
                         },
                         {
-                          "folded": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -13193,7 +13652,6 @@
                           "actions": [],
                           "events": [
                             {
-                              "folded": true,
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
@@ -13350,34 +13808,25 @@
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "Delete"
-                                      },
-                                      "parameters": [
-                                        "CannonBall",
-                                        ""
-                                      ]
-                                    },
-                                    {
-                                      "type": {
                                         "value": "Create"
                                       },
                                       "parameters": [
                                         "",
                                         "Bullet_Explosion",
-                                        "ray_trace_x",
-                                        "ray_trace_y",
+                                        "CannonBall.CenterX()",
+                                        "CannonBall.CenterY()",
                                         ""
                                       ]
                                     },
                                     {
                                       "type": {
-                                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                                        "value": "ModVarObjet"
                                       },
                                       "parameters": [
-                                        "",
-                                        "FoeWeapon",
                                         "FoeShip",
-                                        ""
+                                        "Health",
+                                        "-",
+                                        "1"
                                       ]
                                     },
                                     {
@@ -13385,16 +13834,7 @@
                                         "value": "Delete"
                                       },
                                       "parameters": [
-                                        "FoeWeapon",
-                                        ""
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "Delete"
-                                      },
-                                      "parameters": [
-                                        "FoeShip",
+                                        "CannonBall",
                                         ""
                                       ]
                                     }
@@ -13512,29 +13952,9 @@
                                       },
                                       "parameters": [
                                         "",
-                                        "Ship_Explosion",
-                                        "FoeShip.CenterX()",
-                                        "FoeShip.CenterY()",
-                                        ""
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "LinkedObjects::PickObjectsLinkedTo"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "FoeWeapon",
-                                        "FoeShip",
-                                        ""
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "Delete"
-                                      },
-                                      "parameters": [
-                                        "FoeShip",
+                                        "Bullet_Explosion",
+                                        "CannonBall.CenterX()",
+                                        "CannonBall.CenterY()",
                                         ""
                                       ]
                                     },
@@ -13549,6 +13969,47 @@
                                     },
                                     {
                                       "type": {
+                                        "value": "ModVarObjet"
+                                      },
+                                      "parameters": [
+                                        "FoeShip",
+                                        "Health",
+                                        "-",
+                                        "1"
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarObjet"
+                                      },
+                                      "parameters": [
+                                        "FoeShip",
+                                        "Health",
+                                        "<",
+                                        "1"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Create"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Ship_Explosion",
+                                        "FoeShip.CenterX()",
+                                        "FoeShip.CenterY()",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
                                         "value": "ScalableCapability::ScalableBehavior::SetValue"
                                       },
                                       "parameters": [
@@ -13556,6 +14017,15 @@
                                         "Scale",
                                         "=",
                                         ".5"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "FoeShip",
+                                        ""
                                       ]
                                     }
                                   ]
@@ -13580,386 +14050,16 @@
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "ModVarScene"
-                          },
-                          "parameters": [
-                            "ray_trace_x",
-                            "=",
-                            "-1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "ModVarScene"
-                          },
-                          "parameters": [
-                            "ray_trace_y",
-                            "=",
-                            "-1"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
-                            "value": "Raycast"
-                          },
-                          "parameters": [
-                            "PlayerShip",
-                            "CannonBall.CenterX()",
-                            "CannonBall.CenterY()",
-                            "CannonBall.Angle()",
-                            "CannonBall.Speed",
-                            "ray_trace_x",
-                            "ray_trace_y",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": []
-                    },
-                    {
-                      "folded": true,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "ray_trace_x",
-                            "!=",
-                            "-1"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "ray_trace_y",
-                            "!=",
-                            "-1"
-                          ]
-                        }
-                      ],
-                      "actions": [],
-                      "events": [
-                        {
-                          "folded": true,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "Radar",
-                                "True"
-                              ]
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "VarObjet"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "CurrentBounce",
-                                    "=",
-                                    "CannonBall.MaxBounce"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "FoeWeapon",
-                                    "CannonBall",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarObjet"
-                                  },
-                                  "parameters": [
-                                    "FoeWeapon",
-                                    "ShootAngle",
-                                    "<",
-                                    "0"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "LinkedObjects::PickObjectsLinkedTo"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "CannonBall",
-                                    "FoeWeapon",
-                                    ""
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ModVarObjet"
-                                  },
-                                  "parameters": [
-                                    "FoeWeapon",
-                                    "ShootAngle",
-                                    "=",
-                                    "CannonBall.RadarStartAngle"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "Delete"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    ""
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "VarObjet"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "CurrentBounce",
-                                    "!=",
-                                    "CannonBall.MaxBounce"
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "Delete"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    ""
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "Radar",
-                                "False"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "Player",
-                                ""
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Bullet_Explosion",
-                                "ray_trace_x",
-                                "ray_trace_y",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "PlayerCannon",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "PlayerShip",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"PlayerDeath\""
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "Radar",
-                                "False"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "Player",
-                                "True"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "VarObjet"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "CurrentBounce",
-                                ">",
-                                "0"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Bullet_Explosion",
-                                "ray_trace_x",
-                                "ray_trace_y",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "PlayerCannon",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "PlayerShip",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ResetTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"PlayerDeath\""
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": []
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Comment",
-                      "color": {
-                        "b": 109,
-                        "g": 230,
-                        "r": 255,
-                        "textB": 0,
-                        "textG": 0,
-                        "textR": 0
-                      },
-                      "comment": "Breakable Wall"
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "ObjectVariableAsBoolean"
+                            "value": "Distance"
                           },
                           "parameters": [
                             "CannonBall",
-                            "Radar",
-                            "False"
+                            "PlayerShip",
+                            "128",
+                            ""
                           ]
                         }
                       ],
@@ -13999,7 +14099,7 @@
                                 "value": "Raycast"
                               },
                               "parameters": [
-                                "BreakableWall",
+                                "PlayerShip",
                                 "CannonBall.CenterX()",
                                 "CannonBall.CenterY()",
                                 "CannonBall.Angle()",
@@ -14034,73 +14134,279 @@
                                 "!=",
                                 "-1"
                               ]
-                            },
+                            }
+                          ],
+                          "actions": [],
+                          "events": [
                             {
-                              "type": {
-                                "value": "BuiltinCommonInstructions::Or"
-                              },
-                              "parameters": [],
-                              "subInstructions": [
+                              "folded": true,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
                                 {
                                   "type": {
-                                    "value": "CollisionPoint"
+                                    "value": "ObjectVariableAsBoolean"
                                   },
                                   "parameters": [
-                                    "BreakableWall",
-                                    "ray_trace_x",
-                                    "ray_trace_y"
+                                    "CannonBall",
+                                    "Radar",
+                                    "True"
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarObjet"
+                                      },
+                                      "parameters": [
+                                        "CannonBall",
+                                        "CurrentBounce",
+                                        "=",
+                                        "CannonBall.MaxBounce"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "FoeWeapon",
+                                        "CannonBall",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "VarObjet"
+                                      },
+                                      "parameters": [
+                                        "FoeWeapon",
+                                        "ShootAngle",
+                                        "<",
+                                        "0"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "LinkedObjects::PickObjectsLinkedTo"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "CannonBall",
+                                        "FoeWeapon",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "ModVarObjet"
+                                      },
+                                      "parameters": [
+                                        "FoeWeapon",
+                                        "ShootAngle",
+                                        "=",
+                                        "CannonBall.RadarStartAngle"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "CannonBall",
+                                        ""
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarObjet"
+                                      },
+                                      "parameters": [
+                                        "CannonBall",
+                                        "CurrentBounce",
+                                        "!=",
+                                        "CannonBall.MaxBounce"
+                                      ]
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "CannonBall",
+                                        ""
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "ObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "CannonBall",
+                                    "Radar",
+                                    "False"
                                   ]
                                 },
                                 {
                                   "type": {
-                                    "value": "CollisionPoint"
+                                    "value": "ObjectVariableAsBoolean"
                                   },
                                   "parameters": [
-                                    "BreakableWall",
-                                    "ray_trace_x-1",
-                                    "ray_trace_y-1"
+                                    "CannonBall",
+                                    "Player",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Bullet_Explosion",
+                                    "ray_trace_x",
+                                    "ray_trace_y",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "CannonBall",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "PlayerShip",
+                                    "Health",
+                                    "-",
+                                    "1"
                                   ]
                                 }
                               ]
-                            }
-                          ],
-                          "actions": [
+                            },
                             {
-                              "type": {
-                                "value": "Create"
-                              },
-                              "parameters": [
-                                "",
-                                "Bullet_Explosion",
-                                "ray_trace_x",
-                                "ray_trace_y",
-                                "\"Collision\""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "ObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "CannonBall",
+                                    "Radar",
+                                    "False"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ObjectVariableAsBoolean"
+                                  },
+                                  "parameters": [
+                                    "CannonBall",
+                                    "Player",
+                                    "True"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "CannonBall",
+                                    "CurrentBounce",
+                                    ">",
+                                    "0"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "Bullet_Explosion",
+                                    "ray_trace_x",
+                                    "ray_trace_y",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "CannonBall",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "PlayerShip",
+                                    "Health",
+                                    "-",
+                                    "1"
+                                  ]
+                                }
                               ]
                             },
                             {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "BreakableWall",
-                                ""
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "Delete"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                ""
-                              ]
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": []
                             }
                           ]
                         }
                       ]
                     },
                     {
-                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Breakable Wall"
+                    },
+                    {
+                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -14118,447 +14424,89 @@
                       "events": [
                         {
                           "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_x",
-                                "=",
-                                "-1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_y",
-                                "=",
-                                "-1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "id",
-                                "=",
-                                "Random(10000)"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "cannon_x",
-                                "=",
-                                "CannonBall.CenterX()"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "cannon_y",
-                                "=",
-                                "CannonBall.CenterY()"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "cannon_angle",
-                                "=",
-                                "360-mod(CannonBall.Angle(),360)"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "cannon_speed",
-                                "=",
-                                "CannonBall.Speed"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarScene"
-                              },
-                              "parameters": [
-                                "cannon_diamter",
-                                "=",
-                                "CannonBall.Width()/1.8"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "shortterm",
-                                "=",
-                                "id"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
                               "type": {
-                                "value": "ObjectVariableAsBoolean"
+                                "value": "Distance"
                               },
                               "parameters": [
                                 "CannonBall",
-                                "Radar",
-                                "False"
-                              ]
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "SmallFire1",
-                                "=",
-                                "cannon_x+sin(cannon_angle*(Pi()/180))*(cannon_diamter)",
-                                "=",
-                                "cannon_y+cos(cannon_angle*(Pi()/180))*(cannon_diamter)"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "MettreXY"
-                              },
-                              "parameters": [
-                                "SmallFire2",
-                                "=",
-                                "cannon_x-sin(ToRad(cannon_angle))*(cannon_diamter)",
-                                "=",
-                                "cannon_y-cos(ToRad(cannon_angle))*(cannon_diamter)"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                              },
-                              "parameters": [
-                                "NewText2",
-                                "Text",
-                                "=",
-                                "\"cannon_angle\" + ToString(cannon_angle) + \" \nToRad(cannon_angle): \" + ToString(cannon_angle*(Pi()/180)) + \" \nsin: \" + ToString(sin(ToRad(cannon_angle))) + \" \ncannon_diamter: \" + ToString(cannon_diamter)"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "AjoutObjConcern"
-                              },
-                              "parameters": [
-                                "",
-                                "CannonBall"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "ObjectVariableAsBoolean"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "Radar",
-                                "False"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "VarObjet"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "shortterm",
-                                "!=",
-                                "id"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "Raycast"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "cannon_x+cos(ToRad(cannon_angle))*cannon_diamter",
-                                "cannon_y+sin(ToRad(cannon_angle))*cannon_diamter",
-                                "cannon_angle",
-                                "cannon_speed",
-                                "ray_trace_x",
-                                "ray_trace_y",
+                                "BreakableWall",
+                                "128",
                                 ""
                               ]
                             }
                           ],
-                          "actions": [
-                            {
-                              "type": {
-                                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                              },
-                              "parameters": [
-                                "NewText2",
-                                "Text",
-                                "=",
-                                "FoeShip.hasTarget + \"\nst: \" + ToString(CannonBall.shortterm) + \" \nid: \" + ToString(id) + \" \nTargetX: \" + ToString(ray_trace_x) + \" \nTargetY: \" + ToString(ray_trace_y)"
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_x",
-                                "=",
-                                "-1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_y",
-                                "=",
-                                "-1"
-                              ]
-                            }
-                          ],
                           "actions": [],
                           "events": [
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "ray_trace_x",
+                                    "=",
+                                    "-1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarScene"
+                                  },
+                                  "parameters": [
+                                    "ray_trace_y",
+                                    "=",
+                                    "-1"
+                                  ]
+                                }
+                              ]
+                            },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
                                   "type": {
-                                    "value": "AjoutObjConcern"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "CannonBall"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "Radar",
-                                    "False"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarObjet"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "shortterm",
-                                    "!=",
-                                    "id"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "inverted": true,
                                     "value": "Raycast"
                                   },
                                   "parameters": [
-                                    "CannonBall",
-                                    "cannon_x+cos(ToRad(cannon_angle))*cannon_diamter",
-                                    "cannon_y+sin(ToRad(cannon_angle))*cannon_diamter",
-                                    "cannon_angle",
-                                    "cannon_speed",
+                                    "BreakableWall",
+                                    "CannonBall.CenterX()",
+                                    "CannonBall.CenterY()",
+                                    "CannonBall.Angle()",
+                                    "CannonBall.Speed",
                                     "ray_trace_x",
                                     "ray_trace_y",
                                     ""
                                   ]
                                 }
                               ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                                  },
-                                  "parameters": [
-                                    "NewText2",
-                                    "Text",
-                                    "=",
-                                    "FoeShip.hasTarget + \"\nst: \" + ToString(CannonBall.shortterm) + \" \nid: \" + ToString(id) + \" \nTargetX: \" + ToString(ray_trace_x) + \" \nTargetY: \" + ToString(ray_trace_y)"
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_x",
-                                "=",
-                                "-1"
-                              ]
+                              "actions": []
                             },
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_y",
-                                "=",
-                                "-1"
-                              ]
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
                             {
                               "type": "BuiltinCommonInstructions::Standard",
                               "conditions": [
                                 {
                                   "type": {
-                                    "value": "AjoutObjConcern"
+                                    "value": "VarScene"
                                   },
                                   "parameters": [
-                                    "",
-                                    "CannonBall"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "Radar",
-                                    "False"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarObjet"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "shortterm",
-                                    "!=",
-                                    "id"
-                                  ]
-                                },
-                                {
-                                  "type": {
-                                    "inverted": true,
-                                    "value": "Raycast"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "cannon_x+cos(ToRad(cannon_angle-90))*cannon_diamter",
-                                    "cannon_y+sin(ToRad(cannon_angle-90))*cannon_diamter",
-                                    "cannon_angle",
-                                    "cannon_speed",
                                     "ray_trace_x",
-                                    "ray_trace_y",
-                                    ""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
-                                  },
-                                  "parameters": [
-                                    "NewText2",
-                                    "Text",
-                                    "=",
-                                    "FoeShip.hasTarget + \"\nst: \" + ToString(CannonBall.shortterm) + \" \nid: \" + ToString(id) + \" \nTargetX: \" + ToString(ray_trace_x) + \" \nTargetY: \" + ToString(ray_trace_y)"
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_x",
-                                "!=",
-                                "-1"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "VarScene"
-                              },
-                              "parameters": [
-                                "ray_trace_y",
-                                "!=",
-                                "-1"
-                              ]
-                            }
-                          ],
-                          "actions": [],
-                          "events": [
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "ObjectVariableAsBoolean"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "Radar",
-                                    "False"
+                                    "!=",
+                                    "-1"
                                   ]
                                 },
                                 {
                                   "type": {
-                                    "value": "AjoutObjConcern"
+                                    "value": "VarScene"
                                   },
                                   "parameters": [
-                                    "",
-                                    "CannonBall"
+                                    "ray_trace_y",
+                                    "!=",
+                                    "-1"
                                   ]
                                 },
                                 {
@@ -14572,7 +14520,7 @@
                                         "value": "CollisionPoint"
                                       },
                                       "parameters": [
-                                        "CannonBall",
+                                        "BreakableWall",
                                         "ray_trace_x",
                                         "ray_trace_y"
                                       ]
@@ -14582,35 +14530,15 @@
                                         "value": "CollisionPoint"
                                       },
                                       "parameters": [
-                                        "CannonBall",
+                                        "BreakableWall",
                                         "ray_trace_x-1",
                                         "ray_trace_y-1"
                                       ]
                                     }
                                   ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "VarObjet"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    "shortterm",
-                                    "!=",
-                                    "id"
-                                  ]
                                 }
                               ],
                               "actions": [
-                                {
-                                  "type": {
-                                    "value": "Delete"
-                                  },
-                                  "parameters": [
-                                    "CannonBall",
-                                    ""
-                                  ]
-                                },
                                 {
                                   "type": {
                                     "value": "Create"
@@ -14620,102 +14548,32 @@
                                     "Bullet_Explosion",
                                     "ray_trace_x",
                                     "ray_trace_y",
+                                    "\"Collision\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "BreakableWall",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "CannonBall",
                                     ""
                                   ]
                                 }
-                              ],
-                              "events": [
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "AjoutObjConcern"
-                                      },
-                                      "parameters": [
-                                        "",
-                                        "CannonBall"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "VarObjet"
-                                      },
-                                      "parameters": [
-                                        "CannonBall",
-                                        "shortterm",
-                                        "=",
-                                        "id"
-                                      ]
-                                    }
-                                  ],
-                                  "actions": [
-                                    {
-                                      "type": {
-                                        "value": "Delete"
-                                      },
-                                      "parameters": [
-                                        "CannonBall",
-                                        ""
-                                      ]
-                                    }
-                                  ]
-                                }
                               ]
                             }
                           ]
-                        },
-                        {
-                          "disabled": true,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "Raycast"
-                              },
-                              "parameters": [
-                                "CannonBall",
-                                "cannon_x",
-                                "cannon_y",
-                                "cannon_angle",
-                                "cannon_speed",
-                                "ray_trace_x",
-                                "ray_trace_y",
-                                ""
-                              ]
-                            }
-                          ],
-                          "actions": []
                         }
                       ]
-                    },
-                    {
-                      "disabled": true,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "AjoutObjConcern"
-                          },
-                          "parameters": [
-                            "",
-                            "CannonBall"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "CannonBall",
-                            "shortterm",
-                            "=",
-                            "id"
-                          ]
-                        }
-                      ],
-                      "actions": []
                     },
                     {
                       "type": "BuiltinCommonInstructions::Comment",
@@ -15981,6 +15839,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Animations",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -16201,6 +16060,114 @@
               ]
             }
           ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Player Health",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TiledUnitsBar::TiledUnitsBar::SetMaxValue"
+                  },
+                  "parameters": [
+                    "PixelHeartBar",
+                    "=",
+                    "PlayerShip.MaxHealth",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
+                  },
+                  "parameters": [
+                    "PixelHeartBar",
+                    "=",
+                    "PlayerShip.Health",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    "Health",
+                    "<",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ResetTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"PlayerDeath\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Ship_Explosion",
+                    "PlayerShip.CenterX()",
+                    "PlayerShip.CenterY()",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PlayerCannon",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "PlayerShip",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ScalableCapability::ScalableBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Ship_Explosion",
+                    "Scale",
+                    "=",
+                    ".5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ],
       "layers": [
@@ -16357,9 +16324,45 @@
               "booleanParameters": {}
             }
           ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "UI",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Anchor",
+          "type": "AnchorBehavior::AnchorBehavior"
+        },
         {
           "name": "Animation",
           "type": "AnimatableCapability::AnimatableBehavior"
@@ -22954,6 +22957,1633 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "author": "",
+      "category": "User interface",
+      "extensionNamespace": "",
+      "fullName": "Resource bar (separated units)",
+      "helpPath": "/objects/resource-bar",
+      "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWRvdHMtaG9yaXpvbnRhbCIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNiwxMkEyLDIgMCAwLDEgMTgsMTBBMiwyIDAgMCwxIDIwLDEyQTIsMiAwIDAsMSAxOCwxNEEyLDIgMCAwLDEgMTYsMTJNMTAsMTJBMiwyIDAgMCwxIDEyLDEwQTIsMiAwIDAsMSAxNCwxMkEyLDIgMCAwLDEgMTIsMTRBMiwyIDAgMCwxIDEwLDEyTTQsMTJBMiwyIDAgMCwxIDYsMTBBMiwyIDAgMCwxIDgsMTJBMiwyIDAgMCwxIDYsMTRBMiwyIDAgMCwxIDQsMTJaIiAvPjwvc3ZnPg==",
+      "name": "TiledUnitsBar",
+      "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/063e9152cf65bc0f3be2a828afd950c3ecf1b1fc72feefdc2467252fe987dc0f_dots-horizontal.svg",
+      "shortDescription": "A bar that represents a resource in the game (health, mana, ammo, etc).",
+      "version": "1.1.2",
+      "description": [
+        "A bar that represents a resource in the game (health, mana, ammo, etc).",
+        "",
+        "There are ready-to-use resource bars in the asset-store [resource bars pack](https://editor.gdevelop.io/?initial-dialog=asset-store&asset-pack=resource-bars-resource-bars)."
+      ],
+      "origin": {
+        "identifier": "TiledUnitsBar",
+        "name": "gdevelop-extension-store"
+      },
+      "tags": [
+        "resource",
+        "bar",
+        "health",
+        "mana",
+        "shield",
+        "hearts",
+        "lives",
+        "ammo"
+      ],
+      "authorIds": [
+        "IWykYNRvhCZBN3vEgKEbBPOR3Oc2",
+        "gqDaZjCfevOOxBYkK6zlhtZnXCg1",
+        "q8ubdigLvIRXLxsJDDTaokO41mc2"
+      ],
+      "dependencies": [],
+      "eventsFunctions": [],
+      "eventsBasedBehaviors": [
+        {
+          "description": "A bar that represents a resource in the game (health, mana, ammo, etc).",
+          "fullName": "Resource bar",
+          "name": "ResourceBar",
+          "objectType": "",
+          "private": true,
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "This is done after the events to allow users to read the previous value at the end of the change."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"__ResourceBar.LastValueChange\"",
+                        "<=",
+                        "Object.Behavior::PropertyPreviousHighValueDuration()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::UpdatePreviousHighValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "="
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the value of the object.",
+              "fullName": "Value",
+              "functionType": "ExpressionAndCondition",
+              "name": "Value",
+              "sentence": "the value",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyValue()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "Value",
+              "name": "SetValue",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::SetPropertyValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "clamp(GetArgumentAsNumber(\"Value\"), 0, Object.Behavior::MaxValue())"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::PropertyValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "<",
+                        "Object.Behavior::PreviousHighValue()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"__ResourceBar.LastValueChange\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::PropertyValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ">=",
+                        "Object.Behavior::PropertyPreviousHighValue()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::UpdatePreviousHighValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the maximum value of the object.",
+              "fullName": "Maximum value",
+              "functionType": "ExpressionAndCondition",
+              "group": "Resource bar configuration",
+              "name": "MaxValue",
+              "sentence": "the maximum value",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyMaxValue()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "MaxValue",
+              "name": "SetMaxValue",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::SetPropertyMaxValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsNumber(\"Value\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the bar is empty.",
+              "fullName": "Empty",
+              "functionType": "Condition",
+              "name": "IsEmpty",
+              "sentence": "_PARAM0_ bar is empty",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::PropertyValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "0"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the bar is full.",
+              "fullName": "Full",
+              "functionType": "Condition",
+              "name": "IsFull",
+              "sentence": "_PARAM0_ bar is full",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::PropertyValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Behavior::PropertyMaxValue()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the previous high value of the resource bar before the current change.",
+              "fullName": "Previous high value",
+              "functionType": "ExpressionAndCondition",
+              "name": "PreviousHighValue",
+              "sentence": "the previous high value",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyPreviousHighValue()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Force the previous resource value to update to the current one.",
+              "fullName": "Update previous value",
+              "functionType": "Action",
+              "name": "UpdatePreviousHighValue",
+              "sentence": "Update the previous resource value of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::SetPropertyPreviousHighValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "Object.Behavior::PropertyValue()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the previous high value conservation duration (in seconds) of the object.",
+              "fullName": "Previous high value conservation duration",
+              "functionType": "ExpressionAndCondition",
+              "group": "Resource bar configuration",
+              "name": "PreviousHighValueDuration",
+              "sentence": "the previous high value conservation duration",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "Object.Behavior::PropertyPreviousHighValueDuration()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "PreviousHighValueDuration",
+              "name": "SetPreviousHighValueDuration",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::SetPropertyPreviousHighValueDuration"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "=",
+                        "GetArgumentAsNumber(\"Value\")"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the resource value is changing.",
+              "fullName": "Value is changing",
+              "functionType": "Condition",
+              "name": "IsChanging",
+              "sentence": "_PARAM0_ value is changing",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::PreviousHighValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "Behavior",
+                        "!=",
+                        "Object.Behavior::PropertyValue()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "Object",
+                        "\"__ResourceBar.LastValueChange\"",
+                        "<=",
+                        "Object.Behavior::PropertyPreviousHighValueDuration()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "1",
+              "type": "Number",
+              "label": "Value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "Value"
+            },
+            {
+              "value": "3",
+              "type": "Number",
+              "label": "Maximum value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "MaxValue"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "Previous high value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "PreviousHighValue"
+            },
+            {
+              "value": "1",
+              "type": "Number",
+              "label": "Previous high value conservation duration (in seconds)",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "PreviousHighValueDuration"
+            }
+          ],
+          "sharedPropertyDescriptors": []
+        }
+      ],
+      "eventsBasedObjects": [
+        {
+          "defaultName": "ResourceBar",
+          "description": "A bar that represents a resource in the game (health, mana, ammo, etc).",
+          "fullName": "Resource bar (separated units)",
+          "name": "TiledUnitsBar",
+          "eventsFunctions": [
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onCreated",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "This allows to detect a change of \"intial value\" on hot reload."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::SetPropertyPreviousInitialValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.PropertyInitialValue()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Create the child-object instances."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Background",
+                        "0",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Bar",
+                        "0",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "FillBar",
+                        "0",
+                        "0",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Background",
+                        "=",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "Bar",
+                        "=",
+                        "2"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "FillBar",
+                        "=",
+                        "3"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "TiledUnitsBar::TiledUnitsBar::PropertyShowBackground"
+                      },
+                      "parameters": [
+                        "Object"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Cache"
+                      },
+                      "parameters": [
+                        "Background"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "Pass the configuration to the behavior (MaxValue must be set before Value)."
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::SetMaxValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.PropertyMaxValue()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.PropertyInitialValue()",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "onHotReloading",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::CenterBar"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::SetMaxValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.PropertyMaxValue()",
+                        "Object.PropertyMaxValue()"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::PropertyInitialValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "!=",
+                        "Object.PropertyPreviousInitialValue()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::SetPropertyPreviousInitialValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.PropertyInitialValue()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::SetValue"
+                      },
+                      "parameters": [
+                        "Object",
+                        "=",
+                        "Object.PropertyInitialValue()",
+                        "Object.PropertyInitialValue()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "Action",
+              "name": "doStepPostEvents",
+              "sentence": "",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "Resize",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "Children instances must be resized when the button size change:\n- background is resized to take the full dimensions of the button\n- the bar size is refreshed according to the value\n\nThe scale is set back to 1 because it means that the parent instance has the same dimensions as the union of its children instances."
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Or"
+                          },
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Object.Width()",
+                                "!=",
+                                "max(Background.BoundingBoxRight(), Bar.BoundingBoxRight()) - min(Background.BoundingBoxLeft(), Bar.BoundingBoxLeft())"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::CompareNumbers"
+                              },
+                              "parameters": [
+                                "Object.Height()",
+                                "!=",
+                                "max(Background.BoundingBoxBottom(), Bar.BoundingBoxBottom()) - min(Background.BoundingBoxTop(), Bar.BoundingBoxTop())"
+                              ]
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Background",
+                            "Width",
+                            "=",
+                            "Object.Width()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "Background",
+                            "Height",
+                            "=",
+                            "Object.Height()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TiledUnitsBar::Scale"
+                          },
+                          "parameters": [
+                            "Object",
+                            "=",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteObject::Width"
+                          },
+                          "parameters": [
+                            "Background",
+                            "=",
+                            "Background.Variable(Width)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteObject::Height"
+                          },
+                          "parameters": [
+                            "Background",
+                            "=",
+                            "Background.Variable(Height)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "TiledUnitsBar::TiledUnitsBar::CenterBar"
+                          },
+                          "parameters": [
+                            "Object",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Center the bar according to the button configuration. This is used in doStepPostEvents when the button is resized.",
+              "fullName": "",
+              "functionType": "Action",
+              "name": "CenterBar",
+              "private": true,
+              "sentence": "Center the bar of _PARAM0_",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetCenter"
+                      },
+                      "parameters": [
+                        "Bar",
+                        "=",
+                        "Background.CenterX()",
+                        "=",
+                        "Background.CenterY()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "Bar",
+                        "+",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "Bar",
+                        "+",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreXY"
+                      },
+                      "parameters": [
+                        "FillBar",
+                        "=",
+                        "Bar.X()",
+                        "=",
+                        "Bar.Y()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the value of the object.",
+              "fullName": "Value",
+              "functionType": "ExpressionAndCondition",
+              "group": "Resource bar",
+              "name": "Value",
+              "sentence": "the value",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "FillBar.ResourceBar::Value()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "Value",
+              "name": "SetValue",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::SetValue"
+                      },
+                      "parameters": [
+                        "FillBar",
+                        "ResourceBar",
+                        "=",
+                        "GetArgumentAsNumber(\"Value\")",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::Width"
+                      },
+                      "parameters": [
+                        "FillBar",
+                        "=",
+                        "FillBar.ResourceBar::Value() * Object.PropertyUnitWidth()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "the maximum value of the object.",
+              "fullName": "Maximum value",
+              "functionType": "ExpressionAndCondition",
+              "group": "Resource bar configuration",
+              "name": "MaxValue",
+              "sentence": "the maximum value",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnNumber"
+                      },
+                      "parameters": [
+                        "FillBar.ResourceBar::PropertyMaxValue()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "expressionType": {
+                "type": "expression"
+              },
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "fullName": "",
+              "functionType": "ActionWithOperator",
+              "getterName": "MaxValue",
+              "name": "SetMaxValue",
+              "sentence": "",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::SetMaxValue"
+                      },
+                      "parameters": [
+                        "FillBar",
+                        "ResourceBar",
+                        "=",
+                        "GetArgumentAsNumber(\"Value\")",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledSpriteObject::Width"
+                      },
+                      "parameters": [
+                        "Bar",
+                        "=",
+                        "Object.PropertyMaxValue() * Object.PropertyUnitWidth()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::TiledUnitsBar::CenterBar"
+                      },
+                      "parameters": [
+                        "Object",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                },
+                {
+                  "description": "Behavior",
+                  "name": "Behavior",
+                  "supplementaryInformation": "TiledUnitsBar::ResourceBar",
+                  "type": "behavior"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the bar is empty.",
+              "fullName": "Empty",
+              "functionType": "Condition",
+              "group": "Resource bar",
+              "name": "IsEmpty",
+              "sentence": "_PARAM0_ bar is empty",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::IsEmpty"
+                      },
+                      "parameters": [
+                        "FillBar",
+                        "ResourceBar",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            },
+            {
+              "description": "Check if the bar is full.",
+              "fullName": "Full",
+              "functionType": "Condition",
+              "group": "Resource bar",
+              "name": "IsFull",
+              "sentence": "_PARAM0_ bar is full",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TiledUnitsBar::ResourceBar::IsFull"
+                      },
+                      "parameters": [
+                        "FillBar",
+                        "ResourceBar",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetReturnBoolean"
+                      },
+                      "parameters": [
+                        "True"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": [
+                {
+                  "description": "Object",
+                  "name": "Object",
+                  "supplementaryInformation": "TiledUnitsBar::TiledUnitsBar",
+                  "type": "object"
+                }
+              ],
+              "objectGroups": []
+            }
+          ],
+          "propertyDescriptors": [
+            {
+              "value": "3",
+              "type": "Number",
+              "label": "Maximum value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "MaxValue"
+            },
+            {
+              "value": "3",
+              "type": "Number",
+              "label": "Initial value",
+              "description": "",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "InitialValue"
+            },
+            {
+              "value": "",
+              "type": "Number",
+              "label": "",
+              "description": "It's used to detect a change at hot reload.",
+              "group": "",
+              "extraInformation": [],
+              "hidden": true,
+              "name": "PreviousInitialValue"
+            },
+            {
+              "value": "24",
+              "type": "Number",
+              "label": "Unit width",
+              "description": "How much pixels to show for a value of 1.",
+              "group": "",
+              "extraInformation": [],
+              "hidden": false,
+              "name": "UnitWidth"
+            },
+            {
+              "value": "true",
+              "type": "Boolean",
+              "label": "Show the background",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "Background"
+              ],
+              "hidden": false,
+              "name": "ShowBackground"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Bar left margin",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "FillBar",
+                "Bar"
+              ],
+              "hidden": false,
+              "name": "BarLeftPadding"
+            },
+            {
+              "value": "0",
+              "type": "Number",
+              "label": "Bar right margin",
+              "description": "",
+              "group": "",
+              "extraInformation": [
+                "FillBar",
+                "Bar"
+              ],
+              "hidden": false,
+              "name": "BarRightPadding"
+            },
+            {
+              "value": "Center",
+              "type": "String",
+              "label": "",
+              "description": "Only used by the scene editor.",
+              "group": "",
+              "extraInformation": [
+                "FillBar",
+                "Bar"
+              ],
+              "hidden": true,
+              "name": "BarVerticalAnchorOrigin"
+            },
+            {
+              "value": "Center",
+              "type": "String",
+              "label": "",
+              "description": "Only used by the scene editor.",
+              "group": "",
+              "extraInformation": [
+                "Background"
+              ],
+              "hidden": true,
+              "name": "BarVerticalAnchorTarget"
+            }
+          ],
+          "objects": [
+            {
+              "assetStoreId": "",
+              "height": 32,
+              "name": "FillBar",
+              "texture": "",
+              "type": "TiledSpriteObject::TiledSprite",
+              "width": 32,
+              "variables": [],
+              "effects": [],
+              "behaviors": [
+                {
+                  "name": "ResourceBar",
+                  "type": "TiledUnitsBar::ResourceBar",
+                  "Value": 1,
+                  "MaxValue": 3,
+                  "PreviousValue": 0
+                }
+              ]
+            },
+            {
+              "assetStoreId": "",
+              "height": 32,
+              "name": "Bar",
+              "texture": "",
+              "type": "TiledSpriteObject::TiledSprite",
+              "width": 32,
+              "variables": [],
+              "effects": [],
+              "behaviors": []
+            },
+            {
+              "assetStoreId": "",
+              "bottomMargin": 0,
+              "height": 32,
+              "leftMargin": 0,
+              "name": "Background",
+              "rightMargin": 0,
+              "texture": "",
+              "tiled": true,
+              "topMargin": 0,
+              "type": "PanelSpriteObject::PanelSprite",
+              "width": 32,
+              "variables": [],
+              "effects": [],
+              "behaviors": []
+            }
+          ],
+          "objectsFolderStructure": {
+            "folderName": "__ROOT",
+            "children": [
+              {
+                "objectName": "FillBar"
+              },
+              {
+                "objectName": "Bar"
+              },
+              {
+                "objectName": "Background"
+              }
+            ]
+          }
+        }
+      ]
+    },
     {
       "author": "",
       "category": "User interface",

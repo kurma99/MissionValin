@@ -3483,6 +3483,13 @@
         "name": "assets\\DottedLine2",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "nokiafc23.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "nokiafc23.ttf",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -25004,7 +25011,7 @@
             "fontSize": 40,
             "visible": true,
             "color": "0;0;0",
-            "fontFamily": "nokiafc223.ttf",
+            "fontFamily": "nokiafc23.ttf",
             "align": "center",
             "wordWrap": true
           }

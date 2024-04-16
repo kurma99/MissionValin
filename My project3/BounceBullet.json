@@ -15,7 +15,7 @@
     "packageName": "com.example.gamename",
     "pixelsRounding": true,
     "projectUuid": "c056ac6a-f1c1-4f68-903e-fb55422ba942",
-    "scaleMode": "nearest",
+    "scaleMode": "linear",
     "sizeOnStartupMode": "adaptHeight",
     "templateSlug": "",
     "useExternalSourceFiles": false,
@@ -3485,10 +3485,73 @@
         "userAdded": true
       },
       {
-        "file": "nokiafc23.ttf",
-        "kind": "font",
+        "alwaysLoaded": false,
+        "file": "assets/Untitled_Artwork 13.png",
+        "kind": "image",
         "metadata": "",
-        "name": "nokiafc23.ttf",
+        "name": "assets\\Untitled_Artwork 13.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_Rocks_Shadow2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets/Rocks_Shadow2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite3-1-4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite3-1-4",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Banner.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Banner",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Banner2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Banner2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Banner3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Banner3",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "NewFont.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "NewFont.fnt",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFont.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFont.png",
+        "smoothed": true,
         "userAdded": true
       }
     ],
@@ -3850,7 +3913,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6040838749988922,
+        "zoomFactor": 0.5468750000000053,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4056,7 +4119,7 @@
           "depth": 0,
           "height": 256,
           "layer": "UI",
-          "name": "NewSprite",
+          "name": "UI",
           "persistentUuid": "ef161134-c883-479d-b4a8-b1bebc6d38c9",
           "width": 256,
           "x": 0,
@@ -5593,7 +5656,7 @@
           "depth": 0,
           "height": 512,
           "layer": "UI",
-          "name": "NewSprite",
+          "name": "UI",
           "persistentUuid": "d4699524-a6f8-45bd-a766-4d26f02f03d3",
           "width": 256,
           "x": 0,
@@ -9372,12 +9435,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets/Rocks_Shadow",
+                      "image": "assets/Rocks_Shadow2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 48,
-                        "y": 48
+                        "x": 24,
+                        "y": 24
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -10291,7 +10354,7 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "NewSprite",
+          "name": "UI",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -10359,7 +10422,7 @@
               ]
             },
             {
-              "name": "NewSprite3-1-5",
+              "name": "Banner",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -10369,7 +10432,79 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "NewSprite3-1-5",
+                      "image": "Banner3",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Banner2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Banner",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -10622,7 +10757,7 @@
             "objectName": "PixiDust"
           },
           {
-            "objectName": "NewSprite"
+            "objectName": "UI"
           },
           {
             "objectName": "ShipHealthBar"
@@ -10668,6 +10803,15 @@
                   "parameters": [
                     "",
                     "\"RefreshCamera\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SceneBackground"
+                  },
+                  "parameters": [
+                    "",
+                    "\"39;179;147\""
                   ]
                 }
               ],
@@ -12119,7 +12263,7 @@
                             "PlayerShip",
                             "Animation",
                             "=",
-                            "\"Circle Hull old\""
+                            "\"Circle Hull\""
                           ]
                         },
                         {
@@ -12267,7 +12411,7 @@
                             "PlayerShip",
                             "Animation",
                             "=",
-                            "\"Square Hull old\""
+                            "\"Square Hull\""
                           ]
                         },
                         {
@@ -12493,6 +12637,43 @@
                             "Scale",
                             "=",
                             "1.1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::Name"
+                          },
+                          "parameters": [
+                            "UI",
+                            "Animation",
+                            "=",
+                            "\"Banner\""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "ChangeSprite"
+                          },
+                          "parameters": [
+                            "UI",
+                            "=",
+                            "PlayerShip.MaxHealth-1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                          },
+                          "parameters": [
+                            "UI",
+                            "Animation"
                           ]
                         }
                       ]
@@ -15422,7 +15603,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "FoeWeapon",
               "conditions": [],
@@ -16019,7 +16199,7 @@
                         "FoeWeapon",
                         "\"Radar\"",
                         ">=",
-                        ".3"
+                        ".1"
                       ]
                     },
                     {
@@ -21233,7 +21413,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 1.7832266100995835,
+        "zoomFactor": 0.5774343008256019,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -23439,8 +23619,8 @@
           "name": "T_TITLE",
           "persistentUuid": "306de265-0d5b-4d85-b628-30bb0fb0b9e4",
           "width": 192,
-          "x": 24,
-          "y": -9,
+          "x": 500,
+          "y": 240,
           "zOrder": 22,
           "numberProperties": [],
           "stringProperties": [],
@@ -23994,7 +24174,7 @@
           "name": "NewSprite2",
           "persistentUuid": "0d853b45-8a29-44b9-b73d-fc8603c5fcb4",
           "width": 0,
-          "x": 720,
+          "x": 717,
           "y": 60,
           "zOrder": 38,
           "numberProperties": [],
@@ -24009,8 +24189,8 @@
           "name": "NewSprite2",
           "persistentUuid": "47ab333a-b886-43e4-b673-1e526cce3d85",
           "width": 0,
-          "x": 720,
-          "y": 80,
+          "x": 729,
+          "y": 72,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -24145,7 +24325,7 @@
           "persistentUuid": "18acff1d-2e28-4d45-9bd4-6728fa5f8bba",
           "width": 0,
           "x": 360,
-          "y": 120,
+          "y": 110,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -24159,8 +24339,8 @@
           "name": "NewSprite2",
           "persistentUuid": "faf3be88-3130-463b-9b0c-3945a6858915",
           "width": 0,
-          "x": 340,
-          "y": 120,
+          "x": 348,
+          "y": 124,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -24174,8 +24354,8 @@
           "name": "NewSprite2",
           "persistentUuid": "8b765ff2-a547-47e1-a821-096e94a8bf19",
           "width": 0,
-          "x": 340,
-          "y": 140,
+          "x": 349,
+          "y": 143,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -24900,6 +25080,186 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "e6e809f1-791b-4951-9e12-45024c49420b",
+          "width": 0,
+          "x": 729,
+          "y": 88,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "994a15c9-4b50-426c-ab59-53062d2ddddb",
+          "width": 0,
+          "x": 709,
+          "y": 200,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "56582429-a9be-40ec-87c2-192e2da1569e",
+          "width": 0,
+          "x": 700,
+          "y": 180,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "9ee700d4-de52-4ec1-bb86-31e896cda67d",
+          "width": 0,
+          "x": 350,
+          "y": 260,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "deb781b0-1776-4719-8d79-8438b09dd755",
+          "width": 0,
+          "x": 360,
+          "y": 241,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "7cd75431-7826-4b38-b96e-d5b7704ecd0a",
+          "width": 0,
+          "x": 697,
+          "y": 300,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "a156074b-9f1f-4730-8567-ece376e1c3df",
+          "width": 0,
+          "x": 705,
+          "y": 320,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "3b3bdd97-cc8c-4c15-93ae-5d6db52d4cea",
+          "width": 0,
+          "x": 351,
+          "y": 380,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "2c4ced3c-6950-45ea-aa95-559897a04bfe",
+          "width": 0,
+          "x": 362,
+          "y": 364,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "8873b2e4-1661-4b44-8453-9d176362d868",
+          "width": 0,
+          "x": 698,
+          "y": 422,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "c843dda0-44b9-47c3-a891-2daeb65f6dcf",
+          "width": 0,
+          "x": 708,
+          "y": 432,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewBitmapText",
+          "persistentUuid": "e531ae33-1818-4fa2-8eb8-c389bd81af66",
+          "width": 0,
+          "x": 200,
+          "y": 295,
+          "zOrder": 39,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -25008,10 +25368,10 @@
           "content": {
             "text": "[b]bold[/b] [i]italic[/i] [size=15]smaller[/size] [font=times]times[/font] font\n[spacing=12]spaced out[/spacing]\n[outline=yellow]outlined[/outline] [shadow=red]DropShadow[/shadow] ",
             "opacity": 255,
-            "fontSize": 40,
+            "fontSize": 20,
             "visible": true,
             "color": "0;0;0",
-            "fontFamily": "nokiafc23.ttf",
+            "fontFamily": "nokiafc22.ttf",
             "align": "center",
             "wordWrap": true
           }
@@ -25488,7 +25848,7 @@
               "string": "Buy",
               "font": "CantoraOne-Regular.ttf",
               "textAlignment": "center",
-              "characterSize": 25,
+              "characterSize": 12,
               "color": {
                 "b": 255,
                 "g": 255,
@@ -25511,7 +25871,7 @@
                 "text": "Buy",
                 "font": "CantoraOne-Regular.ttf",
                 "textAlignment": "center",
-                "characterSize": 25,
+                "characterSize": 12,
                 "color": "255;255;255"
               }
             },
@@ -27431,6 +27791,43 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "CopyText",
+          "type": "BBText::BBText",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "HelloWorld",
+            "opacity": 255,
+            "fontSize": 25,
+            "visible": true,
+            "color": "0;0;0",
+            "fontFamily": "nokiafc222.ttf",
+            "align": "center",
+            "wordWrap": true
+          }
+        },
+        {
+          "assetStoreId": "",
+          "name": "NewBitmapText",
+          "type": "BitmapText::BitmapTextObject",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "text": "Hellow WOröd",
+            "opacity": 255,
+            "scale": 1,
+            "fontSize": 20,
+            "tint": "255;255;255",
+            "bitmapFontResourceName": "NewFont.fnt",
+            "textureAtlasResourceName": "NewFont.png",
+            "align": "left",
+            "wordWrap": true
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -27438,6 +27835,9 @@
         "children": [
           {
             "objectName": "NewBBText"
+          },
+          {
+            "objectName": "CopyText"
           },
           {
             "objectName": "LevelTile"
@@ -27565,6 +27965,9 @@
           },
           {
             "objectName": "NewSprite2"
+          },
+          {
+            "objectName": "NewBitmapText"
           }
         ]
       },
@@ -27590,53 +27993,11 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "LevelNum",
-                    "LevelTile.CenterX()-35",
-                    "LevelTile.CenterY()-15",
-                    "\"Level\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ChangePlan"
-                  },
-                  "parameters": [
-                    "LevelNum",
-                    "=",
-                    "101"
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ChangeColor"
                   },
                   "parameters": [
                     "LevelTile",
                     "\"75;75;75\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BBText::SetBBText"
-                  },
-                  "parameters": [
-                    "LevelNum",
-                    "=",
-                    "\"[b]\"+ ToString(LevelTile.ID)+ \"[/b]\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BBText::SetAlignment"
-                  },
-                  "parameters": [
-                    "LevelNum",
-                    "=",
-                    "\"right\""
                   ]
                 },
                 {
@@ -27685,6 +28046,173 @@
                         ""
                       ]
                     }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "LevelTile",
+                        "ID",
+                        ">",
+                        "9"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "LevelNum",
+                        "LevelTile.CenterX()-20",
+                        "LevelTile.CenterY()-15",
+                        "\"Level\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "LevelNum",
+                        "=",
+                        "101"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "LevelNum",
+                        "=",
+                        "\"[b]\"+ ToString(LevelTile.ID)+ \"[/b]\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetAlignment"
+                      },
+                      "parameters": [
+                        "LevelNum",
+                        "=",
+                        "\"right\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "LevelTile",
+                        "ID",
+                        "<=",
+                        "9"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "LevelNum",
+                        "LevelTile.CenterX()-13",
+                        "LevelTile.CenterY()-15",
+                        "\"Level\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ChangePlan"
+                      },
+                      "parameters": [
+                        "LevelNum",
+                        "=",
+                        "101"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetBBText"
+                      },
+                      "parameters": [
+                        "LevelNum",
+                        "=",
+                        "\"[b]\"+ ToString(LevelTile.ID)+ \"[/b]\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BBText::SetAlignment"
+                      },
+                      "parameters": [
+                        "LevelNum",
+                        "=",
+                        "\"right\""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "CopyText",
+                    "T_TITLE.CenterX()*SceneWindowHeight()/600",
+                    "T_TITLE.CenterY()*SceneWindowHeight()/600",
+                    "\"Text\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetBBText"
+                  },
+                  "parameters": [
+                    "CopyText",
+                    "=",
+                    "T_TITLE.GetBBText()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetFontSize"
+                  },
+                  "parameters": [
+                    "CopyText",
+                    "=",
+                    "T_TITLE.GetFontSize()*SceneWindowHeight()/600"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BBText::SetColor"
+                  },
+                  "parameters": [
+                    "CopyText",
+                    "\"255;0;0\""
                   ]
                 }
               ]
@@ -28739,7 +29267,7 @@
           "cameraType": "perspective",
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
-          "isLocked": true,
+          "isLocked": false,
           "name": "",
           "renderingType": "",
           "visibility": true,
@@ -28787,7 +29315,7 @@
           "isLocked": false,
           "name": "Upgrades",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -28821,6 +29349,39 @@
           "name": "Settings",
           "renderingType": "",
           "visibility": false,
+          "cameras": [],
+          "effects": [
+            {
+              "effectType": "Scene3D::HemisphereLight",
+              "name": "3D Light",
+              "doubleParameters": {
+                "elevation": 45,
+                "intensity": 1,
+                "rotation": 0
+              },
+              "stringParameters": {
+                "groundColor": "64;64;64",
+                "skyColor": "255;255;255",
+                "top": "Y-"
+              },
+              "booleanParameters": {}
+            }
+          ]
+        },
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "Text",
+          "renderingType": "",
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -28877,6 +29438,10 @@
         {
           "name": "Sticker",
           "type": "Sticker::Sticker"
+        },
+        {
+          "name": "Text",
+          "type": "TextContainerCapability::TextContainerBehavior"
         },
         {
           "name": "TopDownMovement",
@@ -93686,7 +94251,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6717718850263779,
+        "zoomFactor": 0.5152255163072333,
         "windowMask": false
       }
     },

@@ -3456,6 +3456,33 @@
         "name": "assets/Breakable8",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/LevelTile4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "LevelTile3",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/DottedLine2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\DottedLine2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_DottedLine2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\DottedLine2",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -11496,6 +11523,296 @@
                         "Level",
                         "=",
                         "30"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "31"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "32"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "33"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "34"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "35"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "36"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "37"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "38"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "39"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+                      },
+                      "parameters": [
+                        "",
+                        "\"Lvl_6_orange_5\"",
+                        "0",
+                        "0",
+                        "0"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "Level",
+                        "=",
+                        "40"
                       ]
                     }
                   ],
@@ -20909,7 +21226,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6815816134485945,
+        "zoomFactor": 1.7832266100995835,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -20989,13 +21306,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "fcabd6a0-57b8-49b3-afdb-90555d742900",
-          "width": 48,
-          "x": 408,
-          "y": 72,
+          "width": 40,
+          "x": 380,
+          "y": 60,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21011,13 +21328,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "3b1321c2-abf3-4eb9-97dd-8db7554680dd",
-          "width": 48,
-          "x": 504,
-          "y": 72,
+          "width": 40,
+          "x": 460,
+          "y": 60,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21033,13 +21350,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "5861ef03-23ec-4b61-a5c2-fc42abed5b58",
-          "width": 48,
-          "x": 600,
-          "y": 72,
+          "width": 40,
+          "x": 540,
+          "y": 60,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21055,13 +21372,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "b3ef1f35-64f8-411b-9355-9781b0873ef9",
-          "width": 48,
-          "x": 696,
-          "y": 72,
+          "width": 40,
+          "x": 620,
+          "y": 60,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21077,13 +21394,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "f4b1075d-037d-46bc-8bd4-92105f8ded68",
-          "width": 48,
-          "x": 792,
-          "y": 72,
+          "width": 40,
+          "x": 700,
+          "y": 60,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21099,13 +21416,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "07405e5b-78da-48a4-a259-3305c124ee6b",
-          "width": 48,
-          "x": 840,
-          "y": 168,
+          "width": 40,
+          "x": 720,
+          "y": 120,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21121,13 +21438,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "4bb95b82-12b5-48a2-aa73-0518b8973950",
-          "width": 48,
-          "x": 744,
-          "y": 168,
+          "width": 40,
+          "x": 640,
+          "y": 120,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21143,13 +21460,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "9b0b9902-0ace-462c-8421-d21eaa439b62",
-          "width": 48,
-          "x": 648,
-          "y": 168,
+          "width": 40,
+          "x": 560,
+          "y": 120,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21165,13 +21482,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "4bda4d79-0567-4e19-bddf-d49bf644d382",
-          "width": 48,
-          "x": 552,
-          "y": 168,
+          "width": 40,
+          "x": 480,
+          "y": 120,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21187,13 +21504,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "6856d910-52f6-42be-b26e-8a14748c7f5e",
-          "width": 48,
-          "x": 456,
-          "y": 168,
+          "width": 40,
+          "x": 400,
+          "y": 120,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21209,13 +21526,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "1d28bebe-0f97-49e2-a12a-dabf8dad94a0",
-          "width": 48,
-          "x": 408,
-          "y": 264,
+          "width": 40,
+          "x": 360,
+          "y": 180,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21231,13 +21548,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "ecdb2a2b-361f-4faf-9780-f79f45ce8541",
-          "width": 48,
-          "x": 504,
-          "y": 264,
+          "width": 40,
+          "x": 440,
+          "y": 180,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21253,13 +21570,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "5e701c05-3eeb-4750-b2b0-8b7a73bada79",
-          "width": 48,
-          "x": 600,
-          "y": 264,
+          "width": 40,
+          "x": 520,
+          "y": 180,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21275,13 +21592,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "89212e98-38a2-4feb-87fa-842fa8bbe574",
-          "width": 48,
-          "x": 696,
-          "y": 264,
+          "width": 40,
+          "x": 600,
+          "y": 180,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21297,13 +21614,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "408ac029-a9c9-4d3c-99ab-a412873cae6b",
-          "width": 48,
-          "x": 792,
-          "y": 264,
+          "width": 40,
+          "x": 680,
+          "y": 180,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21319,13 +21636,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "e1723677-0eb3-4afb-8206-eff4535e53f4",
-          "width": 48,
-          "x": 840,
-          "y": 360,
+          "width": 40,
+          "x": 720,
+          "y": 240,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21341,13 +21658,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "68a653ab-ef08-4bc7-98bd-f5eb2fa22f64",
-          "width": 48,
-          "x": 744,
-          "y": 360,
+          "width": 40,
+          "x": 640,
+          "y": 240,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21363,13 +21680,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "c7e1c949-fb09-4876-b2f7-c37c700a5902",
-          "width": 48,
-          "x": 648,
-          "y": 360,
+          "width": 40,
+          "x": 560,
+          "y": 240,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21385,13 +21702,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "f8af5a07-8e00-4997-b241-eaabf26abc8b",
-          "width": 48,
-          "x": 552,
-          "y": 360,
+          "width": 40,
+          "x": 480,
+          "y": 240,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21407,13 +21724,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "b5e8bafc-c2da-4dab-a9c0-cc300544f7b8",
-          "width": 48,
-          "x": 456,
-          "y": 360,
+          "width": 40,
+          "x": 400,
+          "y": 240,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21429,13 +21746,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "4a34a2e6-a3df-4db2-afc4-02b72a6cdd50",
-          "width": 48,
-          "x": 408,
-          "y": 456,
+          "width": 40,
+          "x": 360,
+          "y": 300,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21451,13 +21768,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "a340ce09-47df-4e43-8dae-ce1c5e4df536",
-          "width": 48,
-          "x": 504,
-          "y": 456,
+          "width": 40,
+          "x": 440,
+          "y": 300,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21473,13 +21790,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "c7e89214-07cb-4d05-9ab7-e365c44c1b99",
-          "width": 48,
-          "x": 600,
-          "y": 456,
+          "width": 40,
+          "x": 520,
+          "y": 300,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21495,13 +21812,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "5bc2b62f-d6c9-4a3e-b264-972826b936e2",
-          "width": 48,
-          "x": 696,
-          "y": 456,
+          "width": 40,
+          "x": 600,
+          "y": 300,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21517,13 +21834,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "139b90b9-78f8-4a0c-92f9-5cda8ec929d3",
-          "width": 48,
-          "x": 792,
-          "y": 456,
+          "width": 40,
+          "x": 680,
+          "y": 300,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21539,13 +21856,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "f2b6419d-68ba-4251-886d-f684b6976e5d",
-          "width": 48,
-          "x": 840,
-          "y": 552,
+          "width": 40,
+          "x": 720,
+          "y": 360,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21561,13 +21878,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "8fbc7c28-5e72-4ab5-9150-54a74aeb3bbd",
-          "width": 48,
-          "x": 744,
-          "y": 552,
+          "width": 40,
+          "x": 640,
+          "y": 360,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21583,13 +21900,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "70c02264-d782-4d20-a8de-d67bf33d35ad",
-          "width": 48,
-          "x": 648,
-          "y": 552,
+          "width": 40,
+          "x": 560,
+          "y": 360,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21605,13 +21922,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "a502f5ee-ab30-43dd-9ddd-2d62ad930d7a",
-          "width": 48,
-          "x": 552,
-          "y": 552,
+          "width": 40,
+          "x": 480,
+          "y": 360,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21627,13 +21944,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "72aa7759-813a-456d-8704-8b90269a4b25",
-          "width": 48,
-          "x": 456,
-          "y": 552,
+          "width": 40,
+          "x": 400,
+          "y": 360,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21649,13 +21966,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 1,
-          "height": 48,
+          "height": 40,
           "layer": "Level",
           "name": "LevelTile",
           "persistentUuid": "5f460df6-6942-4a59-be31-5e8d12ac343e",
-          "width": 48,
-          "x": 360,
-          "y": 552,
+          "width": 40,
+          "x": 680,
+          "y": 420,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -21663,7 +21980,7 @@
             {
               "name": "ID",
               "type": "string",
-              "value": "31"
+              "value": "35"
             }
           ]
         },
@@ -23343,6 +23660,1239 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "48eefafc-3177-492f-8cce-0f89f5cf42d4",
+          "width": 40,
+          "x": 600,
+          "y": 420,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "34"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "fbfa4e0e-3008-4a02-aa7c-431760c12620",
+          "width": 40,
+          "x": 520,
+          "y": 420,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "33"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "26d0ecb9-c883-4073-9ca9-f507c479c673",
+          "width": 40,
+          "x": 440,
+          "y": 420,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "32"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "b63a459d-85f1-42ce-ad6c-bb50e1bc520a",
+          "width": 40,
+          "x": 360,
+          "y": 420,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "31"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "a3fbc026-9082-4237-8301-5120523d6a87",
+          "width": 40,
+          "x": 720,
+          "y": 480,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "36"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "49a75546-bfc3-4d3a-8ff8-40359a14d81d",
+          "width": 40,
+          "x": 640,
+          "y": 480,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "37"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "6873a6ee-4283-4019-8131-f460eee73a90",
+          "width": 40,
+          "x": 560,
+          "y": 480,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "38"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "094cd093-aedd-4641-8fe9-3c11f1d8d149",
+          "width": 40,
+          "x": 480,
+          "y": 480,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "39"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 40,
+          "layer": "Level",
+          "name": "LevelTile",
+          "persistentUuid": "603f1feb-de4e-40f8-bb0b-47ec6f28e152",
+          "width": 40,
+          "x": 400,
+          "y": 480,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "name": "ID",
+              "type": "string",
+              "value": "40"
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "673c26ef-96ea-4ef3-95d3-df4cf5983e85",
+          "width": 0,
+          "x": 400,
+          "y": 50,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "bc5d2c84-826f-40f5-862a-7ae36136c71b",
+          "width": 0,
+          "x": 420,
+          "y": 48,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "a7f1131c-a752-4101-943e-68fd2e70a220",
+          "width": 0,
+          "x": 480,
+          "y": 50,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "d3b3f169-d5cf-4896-b055-a90ebb317afe",
+          "width": 0,
+          "x": 500,
+          "y": 49,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "36693b64-a002-4e89-8237-bf0376c45f32",
+          "width": 0,
+          "x": 560,
+          "y": 51,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "d45a9d48-687c-40e2-b03f-76b624d91f46",
+          "width": 0,
+          "x": 580,
+          "y": 49,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "9bafc32b-def6-40a4-a4cb-db84b3e40da4",
+          "width": 0,
+          "x": 640,
+          "y": 51,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "aa0c3cd2-2ee7-4d49-b732-05eb872b84bf",
+          "width": 0,
+          "x": 660,
+          "y": 51,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "0d853b45-8a29-44b9-b73d-fc8603c5fcb4",
+          "width": 0,
+          "x": 720,
+          "y": 60,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "47ab333a-b886-43e4-b673-1e526cce3d85",
+          "width": 0,
+          "x": 720,
+          "y": 80,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "090e5f04-f1a4-4dc0-8bf9-fe935b9230cc",
+          "width": 0,
+          "x": 680,
+          "y": 109,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "be7ae6b5-047d-4ac8-baf5-6f785028ac34",
+          "width": 0,
+          "x": 660,
+          "y": 110,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "1f845439-34f8-4047-a4bb-ed39402ee5c5",
+          "width": 0,
+          "x": 600,
+          "y": 110,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "63761c0d-55aa-437a-b5a1-97b9018177eb",
+          "width": 0,
+          "x": 580,
+          "y": 109,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "654d9fd1-d0d1-44bd-bc18-699cb017b9ce",
+          "width": 0,
+          "x": 520,
+          "y": 109,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "09e46782-9d4e-43d4-a7a3-e420bf80d327",
+          "width": 0,
+          "x": 500,
+          "y": 110,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "929543e2-9f63-49e6-a565-606e3b0ec670",
+          "width": 0,
+          "x": 440,
+          "y": 110,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "796a3bfb-823c-40e4-9cf4-6597ad2a901a",
+          "width": 0,
+          "x": 420,
+          "y": 109,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "18acff1d-2e28-4d45-9bd4-6728fa5f8bba",
+          "width": 0,
+          "x": 360,
+          "y": 120,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "faf3be88-3130-463b-9b0c-3945a6858915",
+          "width": 0,
+          "x": 340,
+          "y": 120,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "8b765ff2-a547-47e1-a821-096e94a8bf19",
+          "width": 0,
+          "x": 340,
+          "y": 140,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "5686b9aa-aec3-4b0a-89fd-b6bae2c31d74",
+          "width": 0,
+          "x": 380,
+          "y": 169,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "564affe1-111b-4597-aa4b-ef622d2c67a1",
+          "width": 0,
+          "x": 400,
+          "y": 171,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "b871740f-63b0-467b-acef-1d2bb4bb354b",
+          "width": 0,
+          "x": 460,
+          "y": 169,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "af6e52fe-e17b-4e18-9388-c245e99364fc",
+          "width": 0,
+          "x": 480,
+          "y": 170,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "29501925-cd94-4ca3-bca7-c5390fd2ddbc",
+          "width": 0,
+          "x": 540,
+          "y": 171,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "0ef1b1a4-8e0a-405a-8131-ea719d5400f9",
+          "width": 0,
+          "x": 560,
+          "y": 170,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "bb5bee6c-ef1e-4d3c-8d81-cf5d912dba4b",
+          "width": 0,
+          "x": 620,
+          "y": 171,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "94891634-3009-48d8-b9db-e56bbd157ecc",
+          "width": 0,
+          "x": 640,
+          "y": 169,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "e951f19a-9aa6-48af-a060-e25d968a7be6",
+          "width": 0,
+          "x": 580,
+          "y": 229,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "fe10f181-f496-42fd-8828-944682ee164c",
+          "width": 0,
+          "x": 600,
+          "y": 231,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "7b9dc33c-9ab7-45b5-8656-39f2ca77362f",
+          "width": 0,
+          "x": 680,
+          "y": 229,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "83565bc0-1b70-410e-a3fd-975afee7f9a3",
+          "width": 0,
+          "x": 660,
+          "y": 231,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "bc676109-4aec-48e1-8e4e-7ecadd9029d6",
+          "width": 0,
+          "x": 520,
+          "y": 229,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "9bd4c1cd-28bd-4527-873b-e22dffff5cce",
+          "width": 0,
+          "x": 500,
+          "y": 231,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "bd759b0d-1871-4fed-b0c8-8cfc8b8e231a",
+          "width": 0,
+          "x": 440,
+          "y": 229,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "f2cb999a-405a-45e1-bae6-2972e66e7abf",
+          "width": 0,
+          "x": 420,
+          "y": 231,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "f9a79eb0-b7d1-4c9c-9053-e34967ca1d06",
+          "width": 0,
+          "x": 380,
+          "y": 291,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "a3893466-10b7-4d6c-b3cf-d953f8636bcc",
+          "width": 0,
+          "x": 400,
+          "y": 289,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "36b4a821-3853-46b4-b29d-7e5ce744bef7",
+          "width": 0,
+          "x": 460,
+          "y": 289,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "1fb76971-d8ae-4e3a-b979-33afafb46c38",
+          "width": 0,
+          "x": 480,
+          "y": 291,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "56799c8c-c23b-4e7e-8808-c25f8cd836b3",
+          "width": 0,
+          "x": 540,
+          "y": 291,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "08a0fd46-533e-4553-904e-94d6054cff67",
+          "width": 0,
+          "x": 560,
+          "y": 289,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "59e90fc1-1558-4631-a441-6a6478c48185",
+          "width": 0,
+          "x": 620,
+          "y": 289,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "9e6002ef-a7a1-4f2c-ad08-4c19b78ce553",
+          "width": 0,
+          "x": 640,
+          "y": 291,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "8c58b56e-03c7-4601-83ad-14c32cfead36",
+          "width": 0,
+          "x": 660,
+          "y": 349,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "f9f1ee19-f715-4d2d-988d-5cfcb670442b",
+          "width": 0,
+          "x": 680,
+          "y": 351,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "6c594516-f644-438c-974f-3dadb92a9b70",
+          "width": 0,
+          "x": 580,
+          "y": 351,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "383668fd-14a2-43e1-ab41-14b97d087ae8",
+          "width": 0,
+          "x": 600,
+          "y": 349,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "9be294a2-c19d-4622-897f-1ccca1f1d18b",
+          "width": 0,
+          "x": 520,
+          "y": 351,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "2925a7ff-e107-4481-954b-9f1f049ed0d3",
+          "width": 0,
+          "x": 500,
+          "y": 349,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "e22540ee-9cf6-4430-86bc-2ea56e71a600",
+          "width": 0,
+          "x": 440,
+          "y": 349,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "1a132c43-0387-433d-b2e9-9be77d6364a6",
+          "width": 0,
+          "x": 420,
+          "y": 351,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "6a141758-e71b-4361-915f-01e03f05fa90",
+          "width": 0,
+          "x": 380,
+          "y": 409,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "051b0776-a741-4693-8ad4-cdbd2b95b4ec",
+          "width": 0,
+          "x": 400,
+          "y": 411,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "d5b5e5ec-379c-461d-873b-6625389ec3bf",
+          "width": 0,
+          "x": 460,
+          "y": 411,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "f764a358-8a85-418f-bd13-d26cd3e135b9",
+          "width": 0,
+          "x": 480,
+          "y": 409,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "44d9b1fb-947b-477f-bc5d-a1148cc42e3e",
+          "width": 0,
+          "x": 540,
+          "y": 409,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "0a6cc3e1-9b7b-4422-810d-3934a7f4fde7",
+          "width": 0,
+          "x": 560,
+          "y": 411,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "8488ec2d-8e28-4b2b-b766-924b1a3c4749",
+          "width": 0,
+          "x": 620,
+          "y": 411,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "fddde219-f167-4c47-bfb1-56d2cd05ee5c",
+          "width": 0,
+          "x": 640,
+          "y": 409,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "965aaf7f-0193-42c8-907e-90596c762826",
+          "width": 0,
+          "x": 580,
+          "y": 471,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "242acaaf-19e5-48c9-969e-c6d4e0c431fe",
+          "width": 0,
+          "x": 600,
+          "y": 469,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "ff1cbef1-9f5e-4512-a813-0c677122d1c4",
+          "width": 0,
+          "x": 660,
+          "y": 469,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "7bb92072-5d22-4a50-8060-438a3040eb6b",
+          "width": 0,
+          "x": 680,
+          "y": 471,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "36c343dd-b88f-463f-b559-d2f2409f7bec",
+          "width": 0,
+          "x": 520,
+          "y": 471,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "5fe3723f-d86c-4fc2-a2bb-6932fbdaf272",
+          "width": 0,
+          "x": 500,
+          "y": 469,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "97bf252f-87a6-4d0c-8ec6-8729e3b6e425",
+          "width": 0,
+          "x": 440,
+          "y": 469,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Level",
+          "name": "NewSprite2",
+          "persistentUuid": "27d9693d-677b-4aed-a77e-ebda45ae1312",
+          "width": 0,
+          "x": 420,
+          "y": 471,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -23400,11 +24950,11 @@
               "Clicked": false,
               "Hovering": false,
               "Released": false,
-              "Default_Size": 0.15,
+              "Default_Size": 1,
               "Default_Color": "204;134;74",
-              "Hover_Size": 0.16,
+              "Hover_Size": 1.01,
               "Hover_Color": "189;16;224",
-              "Clicked_Size": 0.14,
+              "Clicked_Size": 1,
               "Clicked_Color": "255;255;255"
             }
           ],
@@ -23420,12 +24970,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "LevelTile2",
+                      "image": "LevelTile3",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 160,
-                        "y": 160
+                        "x": 20,
+                        "y": 20
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -25813,6 +27363,67 @@
               "width": 63
             }
           }
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "NewSprite2",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\DottedLine2",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\DottedLine2",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 4,
+                            "y": 4
+                          },
+                          {
+                            "x": 16,
+                            "y": 4
+                          },
+                          {
+                            "x": 16,
+                            "y": 16
+                          },
+                          {
+                            "x": 4,
+                            "y": 16
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "objectsFolderStructure": {
@@ -25944,6 +27555,9 @@
           },
           {
             "objectName": "Music_Slider"
+          },
+          {
+            "objectName": "NewSprite2"
           }
         ]
       },
@@ -27149,7 +28763,7 @@
           "isLocked": false,
           "name": "Level",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": []
         },
@@ -27166,7 +28780,7 @@
           "isLocked": false,
           "name": "Upgrades",
           "renderingType": "",
-          "visibility": true,
+          "visibility": false,
           "cameras": [],
           "effects": [
             {
